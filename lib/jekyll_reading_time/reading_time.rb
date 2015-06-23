@@ -4,6 +4,7 @@ module JekyllReadingTime
   module ReadingTime
     def reading_time(input)
       minutes = reading_time_as_integer(input)
+      minutes = 1 if minutes < 1
 
       if minutes == 1
         "#{about_translation} #{minutes} #{minute_translation}"

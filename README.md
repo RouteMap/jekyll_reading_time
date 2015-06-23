@@ -9,7 +9,7 @@ Display in your Jekyll posts and pages how long it'll take to read their content
 Add this gem to your Jekyll installation's `Gemfile`:
 
 ```ruby
-gem 'jekyll_reading_time', '~> 0.1.0'
+gem 'jekyll_reading_time', '~> 0.1.1'
 ```
 
 Next, add the plugin to the `plugins` key in Jekyll's `_config.yml`:
