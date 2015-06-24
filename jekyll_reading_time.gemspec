@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["tim@theroutemap.com"]
 
   spec.summary       = %q{Calculate how long it'll take to read a Jekyll post or page}
-  spec.homepage      = "https://github.com/routemap/jekyll-reading-time"
+  spec.homepage      = "https://github.com/routemap/jekyll_reading_time"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
