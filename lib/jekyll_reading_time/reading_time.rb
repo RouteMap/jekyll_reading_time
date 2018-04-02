@@ -24,27 +24,28 @@ module JekyllReadingTime
     end
 
     def about_translation
-      translations.fetch("about", "about")
+      @about_translation ||= translations.fetch("about", "about")
     end
 
     def minute_translation
-      translations.fetch("minute", "minute")
+      @minute_translation ||= translations.fetch("minute", "minute")
     end
 
     def minutes_translation
-      translations.fetch("minutes", "minutes")
+      @minutes_translation ||= translations.fetch("minutes", "minutes")
     end
 
     def words_per_minute
-      reading_time_config.fetch("words_per_minute", 180)
+      @words_per_minute ||= reading_time_config.fetch("words_per_minute", 180)
     end
 
     def translations
-      reading_time_config.fetch("translations", {})
+      @translations ||= reading_time_config.fetch("translations", {})
     end
 
     def reading_time_config
-      Jekyll.configuration({}).fetch("reading_time", {})
+      @reading_time_config ||=
+        @context.registers[:site].config.fetch("reading_time", {})
     end
   end
 end
