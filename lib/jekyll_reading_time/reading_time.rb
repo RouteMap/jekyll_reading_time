@@ -1,6 +1,9 @@
-require 'liquid'
+# frozen_string_literal: true
+
+require "liquid"
 
 module JekyllReadingTime
+  # Filter to display reading time
   module ReadingTime
     def reading_time(input)
       minutes = reading_time_as_integer(input)
