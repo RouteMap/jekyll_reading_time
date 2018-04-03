@@ -1,4 +1,5 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-# Specify your gem's dependencies in jekyll-reading-time.gemspec
+source "https://rubygems.org"
+
 gemspec
